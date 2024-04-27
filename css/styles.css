@@ -270,14 +270,14 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     cursor: pointer;
 
     .fa-arrow-alt-circle-up {
-      color: $primary;
-  
-    // 图标水平移动
-    transform: translateX(0) !important; 
-    transition: transform 0.2s!important;
+      color: white !important; /* 设置箭头颜色为白色 */
 
-      // 隐藏图标
-    &.hide {
+      /* 图标水平移动 */
+      transform: translateX(0) !important; 
+      transition: transform 0.2s!important;
+
+      /* 隐藏图标 */
+      &.hide {
         transform: translateX(120%);
       }
     }
@@ -5925,6 +5925,23 @@ textarea.form-control-lg {
   opacity: 0.9;
 }
 
+/* 根据实际需要调整 */
+@media (max-width: 780px) {
+  .iframe-container {
+      position: relative;
+      width: 100%; /* 宽度设置为100% */
+      padding-top: 56.25%; /* 设置为16:9的宽高比例 */
+      overflow: hidden;
+  }
+  .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* 高度设置为100% */
+  }
+}
+
 .carousel-control-prev {
   left: 0;
 }
@@ -6030,6 +6047,25 @@ textarea.form-control-lg {
   vertical-align: var(--bs-spinner-vertical-align);
   border-radius: 50%;
   animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
+}
+
+@keyframes typing {
+  from { width: 0; }
+}
+@keyframes caret {
+  50% { border-color: transparent; }
+}
+
+h1 {
+  font: bold 200% Consolas, Monaco, monospace;
+  color: black;
+  width: 15ch;
+  white-space: nowrap;
+  display: inline-block;
+  overflow:hidden;
+  border-right: .05em solid;
+  animation: typing 3s steps(15) infinite, /* 无限重播 */
+  caret 1s steps(1) infinite;
 }
 
 @keyframes spinner-border {
@@ -10910,6 +10946,20 @@ p {
   border-radius: 100%;
 }
 
+.videobox {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.videobox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 #mainNav {
   padding-top: 1rem;
