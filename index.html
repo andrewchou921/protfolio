@@ -18,6 +18,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/marquee.css" rel="stylesheet" />
+        <!-- 滾輪動畫 -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -45,7 +47,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">I am designer</div>
+                <h1>網頁設計師</h1>
                 <div class="masthead-heading text-uppercase">Andrew Chou</div>
                <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#services">前往我的behance</a>-->
             </div>
@@ -66,7 +68,7 @@
        
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
-            <div class="container">
+            <div class="container" >
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">作品集</h2>
                     <h3 class="section-subheading text-muted">內容包含uiux、網頁、平面與3D等視覺設計</h3>
@@ -74,7 +76,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -89,7 +91,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -104,7 +106,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -119,7 +121,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -134,7 +136,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -149,7 +151,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -164,7 +166,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 7-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -179,7 +181,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 8-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -194,7 +196,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 9-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -220,7 +222,7 @@
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="..." /></div>
+                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2021</h4>
@@ -230,7 +232,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/7.jpg" alt="..." /></div>
+                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="assets/img/about/7.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2022-2023 (一年)</h4>
@@ -241,7 +243,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/6.jpg" alt="..." /></div>
+                        <div class="timeline-image" data-aos="fade-right"><img class="rounded-circle img-fluid" src="assets/img/about/6.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4> 2023 (六個月)</h4>
@@ -252,7 +254,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-image" data-aos="fade-left"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2024 now</h4>
@@ -262,7 +264,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
+                        <div class="timeline-image" data-aos="fade-up">
                             <h4>
                                成為
                                 <br />
@@ -283,7 +285,7 @@
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
                             <h4>平面設計</h4>
@@ -293,7 +295,7 @@
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
                             <h4>UIUX設計</h4>
@@ -303,21 +305,21 @@
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
                             <h4>網頁前端設計</h4>
                             <p class="text-muted">HTML/CSS/JS、RWD、Bootstrap</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4"data-aos="zoom-in">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="..." />
                             <h4>影音動畫剪輯後製</h4>
                             <p class="text-muted">pr、ae軟體，動態影像設計、音訊編輯</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4"data-aos="zoom-in">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/5.jpg" alt="..." />
                             <h4>3d建模</h4>
@@ -363,7 +365,7 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form action="https://formspree.io/aa4269205@gmail.com" method="POST" id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -397,7 +399,7 @@
                     <!-- has successfully submitted-->
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
+                            <div class="fw-bolder">訊息提交完成</div>
                             To activate this form, sign up at
                             <br />
                             <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
@@ -460,7 +462,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sleepapp/Sleep-10.jpg" alt="舒眠APP設計." />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sleepapp/Sleep-11.jpg" alt="舒眠APP設計" />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sleepapp/Sleep-12.jpg" alt="舒眠APP設計" />
-                                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEmNVF5KMxwlGyzk4TJ4Uc0%2F%25E8%2588%2592%25E7%259C%25A0app-%25E6%259C%259F%25E6%259C%25AB%25E5%25A0%25B1%25E5%2591%258A%3Ftype%3Ddesign%26node-id%3D18-155%26t%3D4m2Ki3My91m874uC-1%26scaling%3Dscale-down%26page-id%3D7%253A296%26starting-point-node-id%3D18%253A155%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                                    <div class="iframe-container"><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEmNVF5KMxwlGyzk4TJ4Uc0%2F%25E8%2588%2592%25E7%259C%25A0app-%25E6%259C%259F%25E6%259C%25AB%25E5%25A0%25B1%25E5%2591%258A%3Ftype%3Ddesign%26node-id%3D18-155%26t%3D4m2Ki3My91m874uC-1%26scaling%3Dscale-down%26page-id%3D7%253A296%26starting-point-node-id%3D18%253A155%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe></div>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sleepapp/Sleep-14.jpg" alt="舒眠APP設計" />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sleepapp/Sleep-15.jpg" alt="舒眠APP設計" />
 
@@ -549,7 +551,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">把關愛滋長電子書教材</h2>
                                     <p class="item-intro text-muted">本教材與「台北榮民總醫院感染科衛教室」 合作，藉由精美的插圖與簡潔的介面，幫助醫師與護理師對匿名篩檢的患者進行教學。</p>
-                                    <iframe width="664" height="373.5" src="https://www.youtube.com/embed/MRkZaUfB54Y?si=mnantFVLaYPPeH_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                     <div class="videobox"><iframe width="664" height="373.5" src="https://www.youtube.com/embed/MRkZaUfB54Y?si=mnantFVLaYPPeH_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                                     <br><br>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/aids/aids-1.jpg" alt="..." />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/aids/aids-2.jpg" alt="..." />
@@ -671,7 +673,10 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ngnl/1.jpg" alt="..." />
                                     <P class="item-intro text-muted">主題設定以電玩展視覺動態海報設計，以傳統遊戲元素以及電玩配色做為出發，並使用ae軟體製作動態設計</P>
 
-                                    <div><iframe class=" d-block mx-auto" width="365" height="648" src="https://www.youtube.com/embed/Gd3H8Mwrew4" title="no game no life motion graphic project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><br>
+                                    <div class="videobox"><iframe  class="d-block mx-auto" 
+                                        src="https://www.youtube.com/embed/Gd3H8Mwrew4?controls=1&color=white&theme=light" 
+                                        title="no game no life motion graphic project" 
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div><br>
                                     
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -699,8 +704,10 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/et/et.jpg" alt="..." />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/et/etgif2.gif" alt="..." />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/et/etgif1.gif" alt="..." />
-                                    <iframe src="https://www.behance.net/embed/project/165775555?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe><br><br>
-                                    <p>角色靈感來自於淡江教育科技系的縮寫「TKU ET」，於是加入了藍色、外星人以及科技等元素，所設計而成的原創IP角色，並且透過建模軟體（blender）將ET寶製作出來</p>
+                                    <div class="iframe-container">
+                                      <iframe src="https://www.behance.net/embed/project/165775555?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe><br><br>
+                                      <p>角色靈感來自於淡江教育科技系的縮寫「TKU ET」，於是加入了藍色、外星人以及科技等元素，所設計而成的原創IP角色，並且透過建模軟體（blender）將ET寶製作出來</p>
+                                    </div>
                                     <div>
                                         <a href="https://www.behance.net/gallery/165775555/AISDGs%28%29">詳細故事介紹請至Behance上觀看</a>
                                     </div>
@@ -790,7 +797,14 @@
               <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
             </a>
           </div>
-        
+          <!-- 滾輪動畫 -->
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+              AOS.init({
+                offset:300,
+                duration:800
+              });
+          </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
