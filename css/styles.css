@@ -11418,4 +11418,8 @@ html, body {
   z-index: 9999; /* 确保游标在最顶层 */
   transition: transform 0.9s ease-out; /* 添加延迟效果 */
 }
-
+@media (max-width: 768px) {
+  #myCursor {
+    display: none;
+  }
+}
