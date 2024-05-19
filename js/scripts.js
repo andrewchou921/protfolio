@@ -53,12 +53,28 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 200) {
-      if ($(".goTop").hasClass("hide")) {
-        $(".goTop").toggleClass("hide");
+
+
+  
+
+
+  // 回到頂部按鈕
+  document.addEventListener('DOMContentLoaded', (event) => {
+    // 返回顶部功能的JavaScript实现
+    const goTopBtn = document.querySelector('.goTopBtn');
+    const goTopContainer = document.querySelector('.goTop');
+    
+    goTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 显示/隐藏按钮的逻辑
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        goTopContainer.style.display = 'block';
+      } else {
+        goTopContainer.style.display = 'none';
       }
-    } else {
-      $(".goTop").addClass("hide");
-    }
+    });
   });
