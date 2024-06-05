@@ -2996,7 +2996,7 @@ textarea.form-control-lg {
 
 .btn-dark {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #212529;
+  --bs-btn-bg: #266eb6;
   --bs-btn-border-color: #212529;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #424649;
@@ -3009,6 +3009,15 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
+}
+
+.btn-blue{
+  --bs-btn-bg:#1e4ef5 !important;
+  --bs-btn-border-color: #1e4ef5 !important;
+  --bs-btn-hover-bg: #ffc800 !important;
+  --bs-btn-hover-border-color:#ffc800 !important;
+  --bs-btn-disabled-bg: #ffc800!important;
+  --bs-btn-disabled-border-color:#ffc800!important;
 }
 
 .btn-outline-primary {
@@ -11478,4 +11487,30 @@ html, body {
   margin-left: 0;
   text-align: center;
   border-radius: 50%;
+}
+
+
+
+.slideshow {
+  position: relative;
+  width: 150px;
+  height: 150px; /* 設定容器高度 */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持圖片比例並填滿容器 */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow img.active {
+  opacity: 1;
 }
