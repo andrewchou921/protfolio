@@ -80,6 +80,24 @@ window.addEventListener('DOMContentLoaded', event => {
   });
 
 
-
- 
+ // 自介照片幻燈片
+  const slideshow = document.querySelector('.slideshow');
+  const images = slideshow.querySelectorAll('img');
+  let currentIndex = 0;
   
+  function showImage(index) {
+    images.forEach((img, i) => {
+      if (i === index) {
+        img.classList.add('active');
+      } else {
+        img.classList.remove('active');
+      }
+    });
+  }
+  
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+  
+  setInterval(nextImage, 2500); // 每 2.5 秒切換一次圖片
