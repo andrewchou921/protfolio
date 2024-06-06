@@ -101,3 +101,6 @@ window.addEventListener('DOMContentLoaded', event => {
   }
   
   setInterval(nextImage, 2500); // 每 2.5 秒切換一次圖片
+
+
+  
