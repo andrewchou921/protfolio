@@ -11493,11 +11493,20 @@ html, body {
 
 .slideshow {
   position: relative;
-  width: 150px;
-  height: 150px; /* 設定容器高度 */
+  width: 200px;
+  height: 200px; /* 設定容器高度 */
   margin: auto;
   overflow: hidden;
 }
+/* 手機版照片 */
+@media (max-width:780px) {
+  .slideshow{
+    width:150px;
+    height:150px; /* 設定容器高度 */
+  }
+  
+}
+
 
 .slideshow img {
   position: absolute;
@@ -11514,3 +11523,5 @@ html, body {
 .slideshow img.active {
   opacity: 1;
 }
+
+
