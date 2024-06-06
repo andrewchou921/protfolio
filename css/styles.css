@@ -11499,7 +11499,7 @@ html, body {
   overflow: hidden;
 }
 /* 手機版照片 */
-@media (max-width:780px) {
+@media (max-width:700px) {
   .slideshow{
     width:150px;
     height:150px; /* 設定容器高度 */
