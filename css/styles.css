@@ -10943,7 +10943,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding:6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11533,4 +11533,24 @@ html, body {
 ::-moz-selection {
   background-color: #ffc800;
   color: black;
+}
+
+
+.scroll_down{
+    position: fixed;
+    bottom: 27%; /* 根據需要調整位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* 確保它位於其他內容之上 */
+    transition: opacity 0.2s ease; /* 平滑過渡效果 */
+}
+.scroll_down.hidden {
+  opacity: 0; /* 隱藏 */
+  pointer-events: none; /* 防止鼠標事件 */
+}
+/* 手機版調整 */
+@media (max-width: 768px) {
+  .scroll_down {
+      bottom: 10px;
+  }
 }
