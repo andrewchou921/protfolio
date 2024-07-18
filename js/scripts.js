@@ -103,4 +103,19 @@ window.addEventListener('DOMContentLoaded', event => {
   setInterval(nextImage, 2500); // 每 2.5 秒切換一次圖片
 
 
+
+// 滑鼠lottie
+window.addEventListener('scroll', function() {
+  const scrollDownElement = document.querySelector('.scroll_down');
+  if (window.scrollY > 100) { // 當滾動超過 100 像素時
+      scrollDownElement.classList.add('hidden');
+      
+      // 延遲一段時間以確保過渡效果完成
+      setTimeout(function() {
+          scrollDownElement.remove(); // 永久移除元素
+      }, 100); // 100 毫秒，與 CSS 中的過渡時間相同
+  }
+});
+
+
   
